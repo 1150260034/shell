@@ -1,5 +1,7 @@
 #!/bin/bash
 
+for ((i=1;i<3;i++)); do
+
 date_time=`/usr/bin/date "+%Y-%m-%d %H:%M:%S"`
 
 echo "############################################################################################" >>$(dirname $0)/checkData/$date_time.log
@@ -74,3 +76,7 @@ echo " 结束时间:"`/usr/bin/date "+%Y-%m-%d %H:%M:%S"` >> $(dirname $0)/check
 echo "" >>$(dirname $0)/checkData/$date_time.log
 
 echo "修改成功" >>$(dirname $0)/checkData/$date_time.log
+
+sleep 30
+
+done
