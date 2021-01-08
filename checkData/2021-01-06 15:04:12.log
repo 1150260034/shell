@@ -1,0 +1,102 @@
+############################################################################################
+### 开始时间:2021-01-06 15:04:12 ###
+############################################################################################
+
+[36m************CPU信息*************[0m
+top - 15:04:12 up 8 days,  2:31,  2 users,  load average: 1.66, 1.99, 1.25
+Tasks: 102 total,   2 running,  98 sleeping,   2 stopped,   0 zombie
+%Cpu(s): 12.5 us,  0.0 sy,  0.0 ni, 87.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :  1882232 total,   401624 free,   687976 used,   792632 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.  1024888 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+  932 root      10 -10  158788  32436   3064 S  6.7  1.7 102:39.96 AliYunDun
+    1 root      20   0  125456   3028   1660 S  0.0  0.2   0:27.30 systemd
+    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd
+    3 root      20   0       0      0      0 S  0.0  0.0   0:20.20 ksoftirqd/0
+    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H
+    7 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0
+    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 R  0.0  0.0   1:11.54 rcu_sched
+   10 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 lru-add-drain
+   11 root      rt   0       0      0      0 S  0.0  0.0   0:03.37 watchdog/0
+   13 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs
+   14 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 netns
+   15 root      20   0       0      0      0 S  0.0  0.0   0:00.23 khungtaskd
+   16 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 writeback
+   17 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kintegrityd
+   18 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset
+   19 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset
+   20 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset
+   21 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kblockd
+   22 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 md
+   23 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 edac-poller
+   24 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 watchdogd
+   30 root      20   0       0      0      0 S  0.0  0.0   0:03.96 kswapd0
+
+[36m************CPU占用TOP 10进程*************[0m
+用户     进程ID  %CPU  命令
+root     31213   1.0   /root/.vscode-server/bin/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/node
+root     30648   0.9   /root/.vscode-server/bin/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/node
+root     932     0.8   /usr/local/aegis/aegis_client/aegis_10_89/AliYunDun
+root     15970   0.1   /root/.vscode-server/bin/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/node
+root     581     0.1   CmsGoAgent-Worker
+chrony   22119   0.0   /usr/sbin/chronyd
+dbus     516     0.0   /usr/bin/dbus-daemon
+mysql    30306   0.0   /usr/local/mysql/bin/mysqld
+polkitd  22298   0.0   /usr/lib/polkit-1/polkitd
+root     10      0.0   [lru-add-drain]
+
+[36m************内存占用TOP 10进程*************[0m
+用户   进程ID  %MEM  虚拟内存  常驻内存  命令
+mysql  30306   8.6   1142604   163464    /usr/local/mysql/bin/mysqld
+root   30648   5.0   939492    94836     /root/.vscode-server/bin/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/node
+root   31213   4.2   926272    80716     /root/.vscode-server/bin/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/node
+root   27420   2.3   659156    44448     /usr/bin/dockerd
+root   15970   2.2   1281664   42380     /root/.vscode-server/bin/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/node
+root   932     1.7   158788    32436     /usr/local/aegis/aegis_client/aegis_10_89/AliYunDun
+root   29310   1.2   616612    23844     /root/.vscode-server/bin/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/node
+root   29929   1.2   616576    23728     /root/.vscode-server/bin/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/node
+root   30203   1.2   616612    23872     /root/.vscode-server/bin/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/node
+root   27409   1.1   576864    21432     /usr/bin/containerd
+
+[36m##############内存信息:##############[0m
+              total        used        free      shared  buff/cache   available
+Mem:           1838         671         392           0         774        1001
+Swap:             0           0           0
+
+[36m##############TCP连结数:##############[0m
+TCP数量: 6
+UDP数量: 2
+
+[36m##############查看挂载点##############[0m
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        909M     0  909M   0% /dev
+tmpfs           920M     0  920M   0% /dev/shm
+tmpfs           920M  672K  919M   1% /run
+tmpfs           920M     0  920M   0% /sys/fs/cgroup
+/dev/vda1        40G  9.1G   29G  25% /
+tmpfs           184M     0  184M   0% /run/user/0
+
+[36m##############读取磁盘IO信息:##############[0m
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free  inact active   si   so    bi    bo   in   cs us sy id wa st
+ 9  0      0    412    312   1033    0    0     6    21   15    6  1  1 99  0  0
+ 0  0      0    414    312   1031    0    0     0     0 1333 2616  8  3 89  0  0
+
+[36m##############读取网卡流量信息:##############[0m
+Linux 3.10.0-957.21.3.el7.x86_64 (aliyun) 	01/06/2021 	_x86_64_	(1 CPU)
+
+03:04:14 PM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+03:04:15 PM      eth0     11.22      9.18      2.03      1.74      0.00      0.00      0.00
+03:04:15 PM        lo     16.33     16.33      2.46      2.46      0.00      0.00      0.00
+03:04:15 PM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+Average:        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+Average:         eth0     11.22      9.18      2.03      1.74      0.00      0.00      0.00
+Average:           lo     16.33     16.33      2.46      2.46      0.00      0.00      0.00
+Average:      docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+[36m##############TOMCAT的进程号:##############[0m
+ 结束时间:2021-01-06 15:04:15
+
